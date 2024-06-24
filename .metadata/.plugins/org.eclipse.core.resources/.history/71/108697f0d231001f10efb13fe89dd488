@@ -1,0 +1,81 @@
+package arrayListFramework;
+import java.util.*;
+public class EasyProblems {
+
+	public static void main(String[] args) {
+		
+		/* Easy Level
+
+		1. Create and Print an ArrayList:Write a Java program to create an ArrayList 
+		of strings. Add five city names to the list and then print each city
+		name using a for loop.
+
+		2.Add and Retrieve Elements:Write a Java program to create an ArrayList of 
+		integers. Add the numbers 10, 20, 30, 40, and 50 to the list. Then, retrieve 
+		and print the element at index 2.
+		
+		3.Remove Elements from ArrayList:Write a Java program to create an ArrayList 
+		of strings. Add five different fruit names to the list. Remove the third fruit
+		from the list and print the updated list.
+
+		4.Check if Element Exists:Write a Java program to create an ArrayList of strings. 
+		Add five different animal names to the list. Check if the list contains the name
+		"Lion" and print a message indicating whether it is present or not.
+
+		5. Clear an ArrayList:Write a Java program to create an ArrayList of strings.
+		 Add three book titles to the list. Clear all elements from the list and 
+		 then print the list to confirm it is empty. 
+		*/
+	
+		EasyProblems EP = new EasyProblems();
+		EP.City();
+		EP.Fruits();
+		EP.Animals();
+
+	}
+	
+	public void City() {
+		List<String> Cities = new ArrayList<>();
+		Cities.add("Kakinada");
+		Cities.add("Hyderabad");
+		Cities.add("New Dehli");
+		Cities.add("Lucknow");
+		Cities.add("Mumbai");
+		
+		for(String city : Cities) {
+			System.out.println(city);
+		}
+	}
+	public  void Animals(){
+		List<String> Animals = new ArrayList<>();
+		Animals.add("Lion");
+		Animals.add("Tiger");
+		Animals.add("Cheetha");
+		Animals.add("Elephant");
+		Animals.add("Dinosaur");
+		System.out.println(Animals);
+	}
+	public void Fruits(){
+		List<String> Fruits = new ArrayList<>();
+		Fruits.add("Apple");
+		Fruits.add("Bannana");
+		Fruits.add("Mango");
+		Fruits.add("PineApple");
+		Fruits.add("StrawBerry");
+		
+		System.out.println(Fruits);
+		Fruits.remove("Mango");
+		Fruits.remove(0);
+		System.out.println(Fruits);
+	}
+	public void Index() {
+		ArrayList<Integer> Numbers = new ArrayList<>();
+		int i=1;
+		while(i<6) {
+		Numbers.add(i*10);
+		i++;
+		}
+		
+		System.out.println(Numbers.get(i));
+	}
+}

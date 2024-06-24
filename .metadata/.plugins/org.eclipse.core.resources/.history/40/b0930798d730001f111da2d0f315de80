@@ -1,0 +1,17 @@
+package mapFramework;
+import java.util.*;
+
+public class HashMapBasics1 {
+
+	public static void main(String[] args) {
+//		Creating map class object
+		Map<Integer,String> obj = new HashMap<Integer,String>();
+		System.out.println(obj);		
+		obj.put(01, "Abhishake");
+		obj.put(02, "Abhiram");
+
+		System.out.println(obj);		
+
+	}
+
+}

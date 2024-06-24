@@ -1,0 +1,66 @@
+package arrayListFramework;
+import java.util.*;
+import java.util.Random;
+public class MidLevel {
+	
+	public static void main(String[] args) {
+/* Medium Level 
+1.Find and Replace Element: Write a Java program to create an ArrayList of strings 
+containing the names of five countries. Search for a specific country in the list and 
+replace it with another country name. Print the updated list.
+
+2. Sort an ArrayList: Write a Java program to create an ArrayList of integers. Add at
+least ten random integers to the list. Sort the list in ascending order and print 
+the sorted list.
+
+3.Merge Two ArrayLists:Write a Java program to create two ArrayList of integers. 
+Add five integers to each list. Merge the two lists into a single ArrayList and 
+then print the merged list.
+
+4.Remove Duplicates:Write a Java program to create an ArrayList of strings with 
+duplicate elements. Remove all duplicates from the list and print the updated list 
+without duplicates.
+
+5.Reverse an ArrayList:Write a Java program to create an ArrayList of strings. Add at 
+least five string elements to the list. Reverse the order of elements in the list 
+and then print the reversed list. */
+		MidLevel ml = new MidLevel();
+		//ml.countries();
+		Sort();
+		
+	}
+	public static void Sort() {
+		Random rr = new Random();
+		List<Integer> Numbers = new ArrayList<>();
+		while(Numbers.size()<10) {
+			Numbers.add(rr.nextInt(10)+1);
+		}
+		
+		System.out.println(Numbers.get(0));
+
+		
+
+
+	}
+	
+	public  void countries() {
+		Scanner in = new Scanner(System.in);
+		ArrayList<String> Countries = new ArrayList<>();
+		Countries.add("India");
+		Countries.add("USA");
+		Countries.add("Pakistan");
+		Countries.add("Japan");
+		Countries.add("Europe");
+		Countries.add("India");
+		Countries.add("India");
+		System.out.print(Countries + "\nEnter the Target : ");
+		String target = in.next();
+		in.close();
+		
+		while(Countries.contains(target)) {
+			Countries.remove(target);
+		}
+		System.out.println("After : " + Countries);
+	}
+
+}

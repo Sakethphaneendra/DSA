@@ -1,0 +1,21 @@
+package mapFramework;
+
+import java.util.*;
+
+public class HashMapBasics1 {
+
+	public static void main(String[] args) {
+
+		// 1. Basic Operations: Write a Java program to create a HashMap, add some
+		// key-value pairs, and print the map.
+		
+		HashMap<String, Integer> HM = new HashMap<>();
+		HM.put("Saketh", 20);
+		HM.put("Jayasree", 90);
+		HM.put("Hema", 80);
+		HM.put("Saketh", 95);
+		System.out.println(HM);
+
+	}
+
+}

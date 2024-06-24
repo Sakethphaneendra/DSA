@@ -1,0 +1,21 @@
+package mapFramework;
+import java.util.*;
+
+public class HashMapBasics1 {
+
+	public static void main(String[] args) {
+//		Creating map class object
+		Map<Integer,String> obj = new HashMap<Integer,String>();
+		System.out.println(obj);		
+		obj.putIfAbsent(04301, "Abhishake");
+		obj.putIfAbsent(24324, "Abhiram");
+		
+		for(int i=3;i<10;i++) {
+			obj.put(i, "Dummy"+i);
+		}
+
+		System.out.println(obj.containsKey(1));	
+
+	}
+
+}
