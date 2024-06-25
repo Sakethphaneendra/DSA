@@ -1,0 +1,13 @@
+package Basics;
+import java.util.Scanner;
+public class evenOrNot {
+
+	public static void main(String[] args) {
+		Scanner in = new Scanner(System.in);
+		System.out.print("Enter the Number : ");
+		int Number = in.nextInt();
+		
+		System.out.println((Number%2==0)?"Even Number": "Odd Number");
+	}
+
+}

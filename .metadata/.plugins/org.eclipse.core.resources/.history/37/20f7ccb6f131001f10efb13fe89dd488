@@ -1,0 +1,11 @@
+package linkedListFramework;
+import java.util.*;
+public class EasyQuestions {
+
+	public static void main(String[] args) {
+		LinkedList<Integer> LL = new LinkedList<>();
+		
+		LL.add(13);
+	}
+
+}

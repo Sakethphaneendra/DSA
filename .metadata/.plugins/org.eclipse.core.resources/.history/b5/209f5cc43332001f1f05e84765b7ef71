@@ -1,0 +1,12 @@
+package Basics;
+import java.util.Scanner;
+public class sumOFNumbers {
+
+	public static void main(String[] args) {
+Scanner in = new Scanner(System.in);
+System.out.print("Sum Starts from 1 to N : Enter N : ");
+int N = in.nextInt();
+System.out.println(N*(N+1)/2);
+	}
+
+}
